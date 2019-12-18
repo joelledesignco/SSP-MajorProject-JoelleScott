@@ -1,0 +1,581 @@
+@import "../scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+    background-image: url(/images/mountain2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 900px;
+    color: #F1F1F2;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #F1F1F2;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #F45071;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover {
+    text-decoration: none;
+}
+
+label {
+    font-size: 11px;
+    font-weight: 400;
+}
+.clearbutton{
+    padding: 10px 30px;
+    margin: 20px 0;
+    display: inline-block;
+    background: transparent;
+    color: transparent;
+    display: block;
+    text-decoration: none;
+}
+
+#login-btn {
+    margin-right: 55px;
+}
+
+.mybutton {
+    padding: 10px 30px;
+    background: black;
+    color: #F1F1F2;
+    margin: 20px 0;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+}
+
+.mybutton:hover {
+    background: #F45071;
+    color: #F1F1F2;  
+    text-decoration: none !important;
+}
+
+.mybutton2 {
+    padding: 10px 30px;
+    border: 1px solid #F1F1F2;  
+    background: transparent;
+    color: #F1F1F2;
+    margin: 20px 0;
+    display: inline-block;
+    font-size: 13;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+}
+
+.mybutton2:hover {
+    background: #F45071;
+    color: black;  
+    text-decoration: none !important;
+}
+
+.mybutton3 {
+    padding: 10px 30px;
+    background: black;
+    color: #F1F1F2;
+    margin: 20px 0;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+}
+
+.mybutton3:hover {
+    background: #F1F1F2;
+    color: black; 
+    border: 1px solid black;  
+    text-decoration: none !important;
+}
+
+.mybutton4 {
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid #F45071; 
+    color: #F45071;
+    margin: 20px 0;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+}
+
+.mybutton4:hover {
+    color: white; 
+    border: 1px solid white;  
+    text-decoration: none !important;
+}
+
+.search-bar {
+    margin-left: 306px;
+    margin-top: 50px;
+}
+
+.myhr {
+    border-bottom: 5px solid #F45071;
+    width: 30%;
+    border-top: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.myhr2 {
+    border-bottom: 5px solid black;
+    width: 15%;
+    margin-bottom: 30px;
+    margin-left: 0;
+    border-top: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+section:hover .myhr {
+    width: 60%;
+}
+/************** N A V ***************/
+#main-logo {
+    width: 100%;
+}
+
+.main-logo-center{
+    width: 103px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.main-logo-center a{
+    margin: 10px;
+}
+
+.navbar {
+    position: relative;
+
+    .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+.navbar-collapse {
+    padding-left: 120px;
+}
+
+.navbar-brand {
+    display: block;
+}
+
+.nav-link {
+    color: #F1F1F2;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-bottom: 4px solid transparent;
+    margin-top: 65px;
+
+    &:hover {
+        text-decoration: none !important;
+        color: white;
+        border-bottom: 4px solid #F45071;
+    }
+}
+
+.nav-item {
+    padding-left: 40px;
+}
+
+#user-circle {
+    color: white;
+    font-size: 50px;
+    
+    &:hover {
+        color: #F45071;
+    }
+}
+
+.dropdown-menu {
+    color: black;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.form-control {
+    color: white;
+}
+
+/************** H O M E ***************/
+
+#mybanner {
+    background-image: url(/images/mountain2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 900px;
+    margin-top: -107px;
+}
+
+.discover {
+    padding-top: 210px;
+    padding-bottom: 300px;
+}
+
+#jumbo {
+    background-color: #F45071;
+    padding: 10px;
+}
+
+.blog-pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+  
+.overlay-text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+/************** L O G I N ***************/
+
+#signup-bar {
+    margin-top: 300px;
+}
+
+.login-link {
+    color: #F1F1F2;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-bottom: 4px solid white;
+    margin-top: 65px;
+}
+
+.login-link:hover {
+    text-decoration: none !important;
+    color: white;
+    border-bottom: 4px solid #F45071;
+}
+
+.on {
+    border-bottom: 4px solid #F45071;
+}
+
+.blurry-bg {
+    background: rgba(0, 0, 0, 0.187);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(9px);
+}
+
+.blurry-bg2 {
+    background: rgba(0, 0, 0, 0.5);
+    height: 570px;
+    backdrop-filter: blur(9px);
+    z-index: 1;
+    margin-top: 250px;
+}
+
+#girl-pic {
+    margin-left: 50px;
+}
+
+/************* M Y  F O R M *************/
+.form-control {
+    border-radius: 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.276);
+    backdrop-filter: blur(15px);
+    height: calc(1.6em + 0.75rem + 2px);
+}
+
+#search_field {
+    width: 81%;
+}
+/************** P R O F I L E **************/
+
+.prof {
+    margin-top: 340px;
+}
+
+.pink-bg3 {
+    background-color: #F45071;
+    margin-top: -285px;
+    margin-left: -145px;
+    position: absolute;
+}
+
+.bio-details {
+    margin-left: 275px;
+    position: relative;
+}
+
+
+
+
+/************** E D I T  U S E R **************/
+
+#edit_user {
+    padding-top: 385px;
+}
+
+#upload-photo {
+    background-color: #F45071;
+}
+
+#profile-col {
+    background-color: #F45071;
+    height: 600px;
+    position: absolute;
+    z-index: 10
+}
+
+#prof-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#bio-black {
+    position: relative;
+    background: rgba(0, 0, 0, 0.276);
+    backdrop-filter: blur(15px);
+    z-index: 0;
+    height: 800px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+/************** B L O G **************/
+
+.card-img {
+    width: 300px;
+    height: 200px;
+}
+
+.no-gutters {
+    padding: 20px;
+}
+
+.mycard {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+
+}
+
+.pink-bg {
+    background-color: #F45071;
+    margin-top: 30px;
+    margin-left: -145px;
+    height: 400px;
+}
+
+.pink-bg2 {
+    background-color: #F45071;
+    margin-top: 30px;
+    margin-left: -145px;
+    height: 500px;
+}
+
+.post-details {
+    margin-left: 74px;
+}
+
+#create-blog {
+    margin-top: 145px;
+}
+
+.social-contact {
+    font-size: 20px;
+}
+
+.icon {
+    &:hover {
+        color: #F45071;
+    }
+}
+
+.pw-link {
+    font-size: 13px; 
+    font-weight: 600;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    color: white;
+
+    &:hover {
+        border-bottom: 2px solid #F45071;
+        color: white;
+    }
+}
+
+.edit-button {
+    color: #F45071;
+    border: 1px solid #F45071;
+    padding: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 3px;
+
+    &:hover {
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    &:hover {
+        background-color: #F45071;
+        color: white;
+    }
+}
+
+.title-article {
+    color: white;
+
+    &:hover {
+        color: #F45071;
+    }
+}
+
+.add-img {
+    font-size: 100px;
+}
+/************** F O O T E R **************/
+
+.page-footer {
+    background-image: url("/images/mountfooter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 57%;
+    bottom: 0;
+    margin-top: 100px;
+}
+
+.footer-items {
+    padding-top: 120px;
+}
+
+.footer-links {
+    padding-bottom: 50px;
+    font-size: 13px; 
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+}
+
+.footer-hr {
+    border: 1px solid white
+}
+
+#foot-logo {
+    width: 75px;
+    padding-bottom: 25px;
+}
+
+.link-hover {
+    border-bottom: 4px solid transparent;
+
+    &:hover {
+        text-decoration: none !important;
+        color: white;
+        border-bottom: 4px solid #F45071;
+    }   
+}
