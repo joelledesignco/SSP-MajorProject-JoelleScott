@@ -12,16 +12,15 @@ $user_query = " SELECT users.*, provinces.name AS province_name, images.url AS p
       
 if($user_request = mysqli_query($conn, $user_query) ):
     while ($user_row = mysqli_fetch_array($user_request)) :
-    
 ?>
 
 <div class="container prof">
     <div class="row">
         <div class="col-9 blurry-bg mx-auto mb-5">
-            <div class="row">
+            <div class="row proff">
                 <div class="col-5 pink-bg3 text-white shadow-lg">
                     <div class="my-5">
-                        <figure class="mx-auto p-5">
+                        <figure class="mx-auto prof-figure">
                             <img id="prof-pic" src="<?php echo $user_row["profile_pic"]?>" alt="">
                         </figure>
                         <?php
@@ -33,10 +32,10 @@ if($user_request = mysqli_query($conn, $user_query) ):
                             <p>
                                 <?=$user_row["city"] . ", " . $user_row["province_name"];?>
                             </p>
-                            <small>- Member since <?=date("M jS, Y", strtotime($user_row["date_created"]))?> -</small> 
+                            <small>Member since <?=date("M jS, Y", strtotime($user_row["date_created"]))?></small> 
                         </div>
                         <?php
-                        if($_SESSION["user_id"] ==$user_id || $_SESSION["role"] == 1):
+                        if($_SESSION["user_id"] == $user_id || $_SESSION["role"] == 1):
                         ?>
                         <a href="/edit_profile.php?user_id=<?=$user_row["id"];?>">
                             <button class="mybutton3 mx-auto my-5">Edit Profile</button>
@@ -73,15 +72,13 @@ if($user_request = mysqli_query($conn, $user_query) ):
                             LEFT JOIN images
                             ON articles.image_id = images.id
                             LEFT JOIN users
-                            ON articles.author_id = users.id";
+                            ON articles.author_id = users.id
+                            WHERE articles.author_id = $user_id";
 
 
         if($article_result = mysqli_query($conn, $articles_query)) {
-
-            while($article_row = mysqli_fetch_array($article_result)) {
-            
+            while($article_row = mysqli_fetch_array($article_result)) {        
             ?>
-
                 <div class="row">
                     <div class="mycard col-10 mx-auto mb-3">
                         <div class="row">
