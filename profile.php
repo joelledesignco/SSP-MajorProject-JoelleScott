@@ -2,6 +2,7 @@
 require_once("header.php");
 
 $user_id = ( isset($_GET["user_id"]) ) ? $_GET["user_id"] : $_SESSION["user_id"];
+
 $user_query = " SELECT users.*, provinces.name AS province_name, images.url AS profile_pic
                 FROM users 
                 LEFT JOIN provinces
@@ -56,6 +57,7 @@ if($user_request = mysqli_query($conn, $user_query) ):
         </div>
     </div>
 </div>
+
 
 <section id="my-blog" class="pt-5">
     <div class="container">
